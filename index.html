@@ -1,166 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Xvision AR Glasses</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background: #002d33;
-    color: #00ffff;
-    text-align: center;
-  }
-  h1 {
-    margin-bottom: 40px;
-  }
-  #products {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  .product {
-    background: #004d4d;
-    border-radius: 12px;
-    width: 280px;
-    padding: 15px;
-  }
-  .product img {
-    width: 100%;
-    border-radius: 8px;
-    height: 180px;
-    object-fit: contain;
-  }
-  .buy-button {
-    margin-top: 10px;
-    background-color: #00cccc;
-    border: none;
-    padding: 12px 25px;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    color: #002d33;
-    text-decoration: none;
-    display: inline-block;
-  }
-  .buy-button:hover {
-    background-color: #00ffff;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xvision - Top AR Glasses</title>
+  <style>
+    body {
+      background-color: #012c2c;
+      color: #00ffe0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+    .logo {
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .logo span {
+      color: #00ffe0;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .card {
+      background-color: #014141;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px #001f1f;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      max-height: 180px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin: 10px 0;
+    }
+    .card p {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    .card a {
+      background-color: #00ffe0;
+      color: #003131;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .card a:hover {
+      background-color: #00c7b2;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Xvision - Top AR Glasses</h1>
+  <header>
+    <div class="logo">👁️<span>X</span>vision</div>
+    <h2>Top AR Glasses</h2>
+  </header>
 
-<div id="products">
+  <div class="products">
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/0680/4150/7113/files/XREAL_Air2_Pro.jpg?v=1709219802" alt="XREAL Air 2 Pro">
+      <h3>XREAL Air 2 Pro</h3>
+      <p>Lightweight AR glasses with ultra-clear displays and Android compatibility.</p>
+      <a href="https://www.xreal.com/eu/air2-pro/" target="_blank">Buy Now</a>
+    </div>
 
-  <div class="product">
-    <img src="https://cdn.shopify.com/s/files/1/0260/8346/8259/products/xreal-air-2-pro_1024x1024.jpg?v=1681161752" alt="XREAL Air 2 Pro" />
-    <h2>XREAL Air 2 Pro</h2>
-    <p>Lightweight AR glasses with ultra-clear displays and Android compatibility.</p>
-    <a href="https://us.shop.xreal.com/products/xreal-air-2-pro" target="_blank" class="buy-button">Buy Now</a>
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/0677/6340/1515/files/RokidMax2.png?v=1716249036" alt="Rokid Max 2">
+      <h3>Rokid Max 2</h3>
+      <p>High-performance AR glasses with 4K display and Android OS support.</p>
+      <a href="https://www.rokid.com/products/rokid-max-2" target="_blank">Buy Now</a>
+    </div>
+
+    <div class="card">
+      <img src="https://www.tcl.com/global-en/content/dam/tcl/product/nxtwear/nxtwear-s/overview/TCL-NXTWEAR-S-product.jpg" alt="TCL NXTWEAR S">
+      <h3>TCL NXTWEAR S</h3>
+      <p>Stylish AR glasses ideal for multimedia and mobile entertainment.</p>
+      <a href="https://www.tcl.com/global-en/products/wearables/nxtwear-s" target="_blank">Buy Now</a>
+    </div>
   </div>
-
-  <div class="product">
-    <img src="https://cdn.shopify.com/s/files/1/0612/1831/7967/products/rokid-max-2_1024x1024.jpg?v=1687366829" alt="Rokid Max 2" />
-    <h2>Rokid Max 2</h2>
-    <p>High-performance AR glasses with 4K display and Android OS support.</p>
-    <a href="https://global.rokid.com/products/rokid-max-2-ar-glasses" target="_blank" class="buy-button">Buy Now</a>
-  </div>
-
-  <div class="product">
-    <img src="https://m.media-amazon.com/images/I/61hfR5yXvDL._AC_SL1500_.jpg" alt="TCL NXTWEAR S" />
-    <h2>TCL NXTWEAR S</h2>
-    <p>Stylish AR glasses ideal for multimedia and mobile entertainment.</p>
-    <a href="https://www.amazon.com/TCL-NXTWEAR-S-Head-Mounted-Display/dp/B08LNZVSTJ" target="_blank" class="buy-button">Buy Now</a>
-  </div>
-
-</div>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Xvision AR Glasses</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background: #002d33;
-    color: #00ffff;
-    text-align: center;
-  }
-  h1 {
-    margin-bottom: 40px;
-  }
-  #products {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  .product {
-    background: #004d4d;
-    border-radius: 12px;
-    width: 280px;
-    padding: 15px;
-  }
-  .product img {
-    width: 100%;
-    border-radius: 8px;
-    height: 180px;
-    object-fit: contain;
-  }
-  .buy-button {
-    margin-top: 10px;
-    background-color: #00cccc;
-    border: none;
-    padding: 12px 25px;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    color: #002d33;
-    text-decoration: none;
-    display: inline-block;
-  }
-  .buy-button:hover {
-    background-color: #00ffff;
-  }
-</style>
-</head>
-<body>
-
-<h1>Xvision - Top AR Glasses</h1>
-
-<div id="products">
-
-  <div class="product">
-    <img src="https://cdn.shopify.com/s/files/1/0260/8346/8259/products/xreal-air-2-pro_1024x1024.jpg?v=1681161752" alt="XREAL Air 2 Pro" />
-    <h2>XREAL Air 2 Pro</h2>
-    <p>Lightweight AR glasses with ultra-clear displays and Android compatibility.</p>
-    <a href="https://us.shop.xreal.com/products/xreal-air-2-pro" target="_blank" class="buy-button">Buy Now</a>
-  </div>
-
-  <div class="product">
-    <img src="https://cdn.shopify.com/s/files/1/0612/1831/7967/products/rokid-max-2_1024x1024.jpg?v=1687366829" alt="Rokid Max 2" />
-    <h2>Rokid Max 2</h2>
-    <p>High-performance AR glasses with 4K display and Android OS support.</p>
-    <a href="https://global.rokid.com/products/rokid-max-2-ar-glasses" target="_blank" class="buy-button">Buy Now</a>
-  </div>
-
-  <div class="product">
-    <img src="https://m.media-amazon.com/images/I/61hfR5yXvDL._AC_SL1500_.jpg" alt="TCL NXTWEAR S" />
-    <h2>TCL NXTWEAR S</h2>
-    <p>Stylish AR glasses ideal for multimedia and mobile entertainment.</p>
-    <a href="https://www.amazon.com/TCL-NXTWEAR-S-Head-Mounted-Display/dp/B08LNZVSTJ" target="_blank" class="buy-button">Buy Now</a>
-  </div>
-
-</div>
 
 </body>
 </html>
