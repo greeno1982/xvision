@@ -1,87 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xvision – Unbox a New Reality</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #000;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-    h1 {
-      font-size: 3em;
-      margin: 0.5em 0;
-    }
-    p {
-      font-size: 1.2em;
-      max-width: 600px;
-    }
-    .logo {
-      width: 120px;
-      height: 120px;
-      background: url('logo.png') no-repeat center/contain;
-      margin-bottom: 2em;
-    }
-    .btn {
-      margin-top: 2em;
-      background-color: #00ffcc;
-      color: #000;
-      padding: 1em 2em;
-      border: none;
-      font-size: 1em;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    .btn:hover {
-      background-color: #00ddb3;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Xvision AR Glasses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #0055aa;
+        }
+        #products {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .product {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: contain;
+            height: 200px;
+        }
+        .product h2 {
+            margin: 15px 0 10px 0;
+            font-size: 1.3em;
+            color: #004080;
+        }
+        .product p {
+            font-size: 0.9em;
+            margin: 0 0 15px 0;
+            color: #555;
+        }
+        .buy-button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .buy-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-  <div class="logo"></div>
-  <h1>Welcome to Xvision</h1>
-  <p>Unbox a New Reality with next-gen AR smart glasses. Stay tuned – something incredible is coming to Europe.</p>
-  <button class="btn">Learn More</button>
-<section id="products" style="padding: 2rem; font-family: sans-serif; background: #f9f9f9;">
-  <h2 style="text-align: center; font-size: 2rem; margin-bottom: 1.5rem;">Top AR Glasses</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
 
-    <!-- Product 1 -->
-    <div style="background: white; border-radius: 12px; padding: 1rem; max-width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-      <img src="https://cdn.alza.cz/ImgW.ashx?fd=f16&cd=SSXNA015" alt="XREAL Air 2 Pro" style="width: 100%; border-radius: 8px;">
-      <h3 style="margin-top: 0.75rem;">XREAL Air 2 Pro</h3>
-      <p>Prémiový výkon s micro‑OLED displejom, stmavením a pohodlným dizajnom. Ideálne na cestovanie, prácu a hry.</p>
-      <a href="https://www.alza.sk/xreal-air-2-pro-black-d7994562.htm" target="_blank" style="display: inline-block; margin-top: 0.75rem; background: #111827; color: white; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none;">Buy Now</a>
+    <h1>Xvision - Top AR Glasses</h1>
+
+    <div id="products">
+
+        <div class="product">
+            <img src="https://us.shop.xreal.com/cdn/shop/files/air2pro-hero2.jpg" alt="XREAL Air 2 Pro" />
+            <h2>XREAL Air 2 Pro</h2>
+            <p>Lightweight AR glasses with ultra-clear displays and Android compatibility.</p>
+            <a href="https://us.shop.xreal.com/products/xreal-air-2-pro" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="https://global.rokid.com/cdn/shop/products/HDMI_7424df79-5c09-4042-b2dd-0954315f7a91.jpg" alt="Rokid Max 2" />
+            <h2>Rokid Max 2</h2>
+            <p>High-performance AR glasses with 4K display and Android OS support.</p>
+            <a href="https://global.rokid.com/products/rokid-max-2-ar-glasses" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61hfR5yXvDL._AC_SL1500_.jpg" alt="TCL NXTWEAR S" />
+            <h2>TCL NXTWEAR S</h2>
+            <p>Stylish AR glasses ideal for multimedia and mobile entertainment.</p>
+            <a href="https://www.amazon.com/TCL-NXTWEAR-S-Head-Mounted-Display/dp/B08LNZVSTJ" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+
     </div>
 
-    <!-- Product 2 -->
-    <div style="background: white; border-radius: 12px; padding: 1rem; max-width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-      <img src="https://cdn.shopify.com/s/files/1/0571/3430/4502/files/max2.png?v=1715912716" alt="Rokid Max 2" style="width: 100%; border-radius: 8px;">
-      <h3 style="margin-top: 0.75rem;">Rokid Max 2</h3>
-      <p>Obrovský vizuálny zážitok s korekciou krátkozrakosti a FOV 50°. Skvelé pre filmy, hranie aj produktivitu.</p>
-      <a href="https://www.unboundxr.eu/augmented-reality/ar-headsets/rokid-max-2" target="_blank" style="display: inline-block; margin-top: 0.75rem; background: #111827; color: white; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none;">Buy Now</a>
-    </div>
-
-    <!-- Product 3 -->
-    <div style="background: white; border-radius: 12px; padding: 1rem; max-width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-      <img src="https://m.media-amazon.com/images/I/61hfR5yXvDL._AC_SL1500_.jpg" alt="TCL NXTWEAR S" style="width: 100%; border-radius: 8px;">
-      <h3 style="margin-top: 0.75rem;">TCL NXTWEAR S</h3>
-      <p>Dostupná alternatíva s magnetickými šošovkami, ideálna na sledovanie obsahu na cestách za dostupnú cenu.</p>
-      <a href="https://lensology.co.uk/product/tcl-nxtwear-s-ar-glasses/" target="_blank" style="display: inline-block; margin-top: 0.75rem; background: #111827; color: white; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none;">Buy Now</a>
-    </div>
-
-  </div>
-</section>
-
+</body>
 </html>
